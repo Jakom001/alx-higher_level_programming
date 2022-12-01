@@ -3,7 +3,8 @@
 if __name__ == " __main__":
     """simple calculator"""
     from calculator_1 import add, sub, mul, div
-    a = 1
+    
+    a = 10
     b = 5
     print("{} + {} = {}".format(a, b, add(a, b)))
     print("{} - {} = {}".fomat(a, b, sub(a, b)))
