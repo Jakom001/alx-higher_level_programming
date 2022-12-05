@@ -7,4 +7,4 @@ uppercase("Best School 98 Battery street")
 guillaume@ubuntu:~/0x01$ ./8-main.py
 BEST
 BEST SCHOOL 98 BATTERY STREET
-guillaume@ubuntu:~/0x01$ 
+guillaume@ubuntu:~/0x01$
