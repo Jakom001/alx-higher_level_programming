@@ -6,11 +6,11 @@ class Rectangle:
     """Represent a rectangle.
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
-        print_symbol (any): Used for symbol representation
+        print_symbol (any): Symbol used for string representation
     """
 
-    print_symbol = '#'
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
@@ -57,6 +57,24 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Return the Rectangle with greater area.
+
+        Args:
+            rect_1 (Rectangle): The first rectangle
+            rect_2 (Rectangle): The second rectangle
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rec_1 must be an instance of Rectangle")
+
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+
+        if reac_1.area() >= react_2.area():
+            return (rect_1)
+
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
